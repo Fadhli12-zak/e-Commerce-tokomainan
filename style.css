@@ -643,7 +643,86 @@ footer a:hover {
   text-align: justify;
   padding-right: 20px;
 }
+/* contact page */
+#contact-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px 50px 50px;
+}
+#contact-detail .details {
+  width: 50%;
+  margin-right: 50px;
+}
 
+#contact-detail .details span,
+#form-details form span {
+  font-size: 14px;
+}
+#contact-detail .details h2,
+#form-details form h2 {
+  font-size: 30px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+#contact-detail .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+#contact-detail .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+#contact-detail .details i {
+  font-size: 14px;
+}
+#contact-detail .details p {
+  font-weight: 300;
+  margin: 0;
+  font-size: 15px;
+  margin-top: 11px;
+}
+#contact-detail .map {
+  height: 400px;
+  width: 55%;
+}
+#contact-detail .map iframe {
+  height: 100%;
+  width: 100%;
+}
+#form-details {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 80px;
+}
+#form-details form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #e1e1e1;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+/* #form-details span,
+#form-details h2 {
+  margin-right: -280px;
+} */
+#form-details form input,
+#form-details form textarea {
+  width: 50%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 21px;
+  border: 1px solid #e1e1e1;
+  /* margin-right: -280px; */
+}
+#form-details form button {
+  background-color: orange;
+  color: white;
+}
 /* responsive */
 @media (max-width: 799px) {
   #navbar {
@@ -755,6 +834,29 @@ footer a:hover {
   #main-content .detail {
     width: 50%;
     margin-left: 50px;
+  }
+  #contact-detail .details {
+    margin-right: 20px;
+  }
+  #contact-detail .details h2 {
+    font-size: 120%;
+  }
+  #contact-detail .map {
+    height: 500px;
+    width: 90%;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+  }
+  #form-details form {
+    width: 100%;
+    display: flex;
+    border: 2px solid #e1e1e1;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  #form-details form h2 {
+    font-size: 20px;
+    padding: 0 0 10px;
   }
 }
 
@@ -874,8 +976,6 @@ footer a:hover {
     margin-left: 0;
   }
   /* about page */
-  #page-about .about-header {
-  }
   #content-about .c-about {
     display: contents;
     align-items: center;
@@ -890,5 +990,38 @@ footer a:hover {
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
+  }
+  #contact-detail {
+    flex-direction: column;
+  }
+  #contact-detail .details {
+    width: 120%;
+    margin-bottom: 30px;
+    text-align: justify;
+    margin-left: 20px;
+  }
+  #contact-detail .details h2 {
+    font-size: 150%;
+    text-align: center;
+  }
+  #contact-detail .details span {
+    margin: 0 0 0 130px;
+  }
+  #contact-detail .map {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+  }
+
+  #form-details form h2 {
+    font-size: 20px;
+    padding: 0 0 10px;
+    text-align: center;
+  }
+  #form-details {
+    display: flex;
+    justify-content: center;
+
+    padding: 40px;
   }
 }
