@@ -19,69 +19,100 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li id="bag">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="active" href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
           </li>
         </ul>
       </div>
       <div id="mobile">
-        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="active-mobile" href="cart.html"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
         <i id="bar" class="fa-solid fa-bars"></i>
       </div>
     </section>
-    <section id="page-about">
-      <div class="about-header">
+    <section id="content-blog">
+      <div class="Banner">
         <h2>Lorem, ipsum dolor.</h2>
         <h3>Lorem ipsum dolor sit.</h3>
       </div>
     </section>
-    <section id="content-about">
-      <div class="c-about">
-        <img src="image/aboutimg.jpg" alt="image" />
-        <div class="desc">
-          <h2>About us</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Accusantium voluptatem amet maxime consequuntur dignissimos
-            explicabo dolorem, error magnam tempora excepturi impedit at commodi
-            facilis quibusdam!ipsum dolor sit amet consectetur adipisicing elit.
-            Tempore repellat, quasi incidunt dolor aut earum molestias, ullam
-            inventore consequatur similique totam autem fuga, cumque dolorum
-            dolore ex ut laudantium ipsa Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Cumque dolores aperiam quos, dignissimos laborum
-            laudantium molestiae ex blanditiis omnis cupiditate. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Eaque dignissimos
-            incidunt deleniti accusamus sed quis in doloremque reprehenderit
-            perspiciatis quo commodi, perferendis iure illum excepturi beatae
-            minus vero accusantium aperiam, distinctio voluptatum saepe
-            temporibus unde vitae iusto. Explicabo rerum, recusandae ipsam
-            voluptatibus perferendis ipsa
-          </p>
-          <abbr title=""
-            >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-            minus quidem nihil! Nostrum, vero! Quisquam.</abbr
-          >
-          <br /><br />
-          <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="98%"
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Reprehenderit inventore earum culpa dolorum odit
-            architecto!</marquee
-          >
+    <section id="cart" class="section-1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <i class="fa-regular fa-circle-xmark"></i>
+            </td>
+            <td><img src="items/bluecar.jpg" alt="" /></td>
+            <td>Blue Car</td>
+            <td>$120.12</td>
+            <td><input type="number" value="1" /></td>
+            <td>%120.12</td>
+          </tr>
+          <tr>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+            <td><img src="items/pinkcar.jpg" alt="" /></td>
+            <td>PInky Car</td>
+            <td>$20.12</td>
+            <td><input type="number" value="1" /></td>
+            <td>%120.12</td>
+          </tr>
+          <tr>
+            <td><i class="fa-regular fa-circle-xmark"></i></td>
+            <td><img src="items/helicopter.jpg" alt="" /></td>
+            <td>chopper</td>
+            <td>$150.12</td>
+            <td><input type="number" value="1" /></td>
+            <td>%120.12</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-add" class="section-1">
+      <div id="voucher">
+        <h3>Apply Voucher</h3>
+        <div>
+          <input type="text" placeholder="Enter your voucher code" />
+          <button class="normal">Apply</button>
         </div>
       </div>
-    </section>
-    <section id="newsletter">
-      <div class="newstext">
-        <h4>Lorem ipsum dolor sit amet.</h4>
-        <p>Lorem ipsum dolor sit amet <span>consectetur.</span></p>
+
+      <div id="subtotal">
+        <h3>cart total</h3>
+        <table>
+          <tr>
+            <td>Cart Subtotal</td>
+            <td>$ 321</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td><strong>Total </strong></td>
+            <td><strong>$321</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Chekout</button>
       </div>
-      <div class="form">
-        <input type="text" placeholder="Enter your email addres" />
-        <button class="SU">Sign Up</button>
-      </div>
     </section>
+
     <footer class="section-1">
       <div class="col">
         <img class="logo" src="image/LOGO.png" alt="" />
