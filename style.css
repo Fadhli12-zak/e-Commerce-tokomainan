@@ -117,22 +117,23 @@
   flex-wrap: wrap;
 }
 #product-1 .pro {
-  width: 22%;
+  width: 20%;
   min-width: 250px;
-  padding: 10px 12px;
+  padding: 10px 13px;
   border: 1px solid #797979;
   border-radius: 25px;
   cursor: pointer;
-  margin: 50px 20px;
+  margin: 35px 30px;
   transition: 0.3 ease;
   position: relative;
 }
 #product-1 .pro:hover {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.858);
+  box-shadow: 5px 20px 60px rgba(0, 0, 0, 0.858);
 }
 
 #product-1 .pro img {
   width: 100%;
+  height: 200px;
   border-radius: 20px;
 }
 
@@ -230,7 +231,7 @@ button.normal {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 140px;
+  margin: 50px 140px;
   margin-bottom: 125px;
 }
 #se-banner .banner-box {
@@ -238,7 +239,7 @@ button.normal {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(image/bucket1.jpg);
+  background-image: url(Banner/Banner1.jpg);
   width: 610px;
   height: 38vh;
   background-size: cover;
@@ -248,22 +249,22 @@ button.normal {
 }
 
 #se-banner .banner2 {
-  background-image: url(image/tabe2.jpg);
+  background-image: url(Banner/Banner2.jpg);
 }
 #se-banner h4 {
-  color: rgb(255, 251, 0);
+  color: #ffecc7;
   font-size: 20px;
   font-weight: 300;
 }
 
 #se-banner h2 {
-  color: rgb(0, 0, 0);
+  color: rgb(247, 128, 0);
   font-size: 28px;
   font-weight: 800;
 }
 
 #se-banner span {
-  color: rgb(93, 193, 132);
+  color: rgb(246, 243, 57);
   font-size: 28px;
   font-weight: 800;
   padding-bottom: 15px;
@@ -272,19 +273,19 @@ button.normal {
 button.se {
   font-size: 15px;
   padding: 15px 30px;
-  color: rgb(0, 0, 0);
+  color: rgb(251, 234, 178);
   background-color: transparent;
   cursor: pointer;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
   outline: none;
   transition: 0.3s;
-  width: 140px;
-  height: 28%;
+  width: 138px;
+  height: 20%;
   font-weight: 600;
 }
 
 #se-banner button.se:hover {
-  background-color: rgb(79, 59, 25);
+  background-color: rgb(159, 126, 90);
   color: hsl(0, 0%, 100%);
   border: 1px rgb(0, 0, 0);
 }
@@ -301,7 +302,7 @@ button.se {
   flex-direction: column;
   justify-content: center;
   align-items: flex;
-  background-image: url(image/cr.jpg);
+  background-image: url(Banner/Banner4.jpg);
   width: 400px;
   height: 20vh;
   background-size: cover;
@@ -312,20 +313,20 @@ button.se {
 }
 
 #se-banner2 .banner-2 {
-  background-image: url(image/teddy-bear.jpg);
+  background-image: url(Banner/Banner5.jpg);
   background-color: black;
 }
 
 #se-banner2 .banner-3 {
-  background-image: url(image/softty.jpg);
+  background-image: url(Banner/Banner3.jpg);
   margin-right: 20px;
 }
 
 #se-banner2.se-p2 h2 {
-  color: rgb(175, 243, 141);
+  color: rgb(255, 196, 0);
 }
 #se-banner2.se-p2 h3 {
-  color: #1897ba;
+  color: #f8fc00;
 }
 
 #newsletter {
@@ -444,7 +445,7 @@ footer a:hover {
 
 /* shop page */
 #page-header {
-  background-image: url("shop/banner2.jpg");
+  background-image: url("Bannertop/banner2.jpg");
   height: 30vh;
   width: 100%;
   justify-content: center;
@@ -536,7 +537,7 @@ footer a:hover {
   margin-bottom: 50px;
 }
 #content-blog .Banner {
-  background-image: url("image/banner-blogM.jpg");
+  background-image: url("Bannertop/banner3.jpg");
   width: 100%;
   height: 30vh;
   display: flex;
@@ -549,7 +550,7 @@ footer a:hover {
   color: rgb(255, 255, 255);
 }
 #content-blog .Banner h3 {
-  color: rgb(254, 227, 188);
+  color: rgb(255, 153, 0);
 }
 #main-content {
   padding: 80px 100px 0 150px;
@@ -612,8 +613,25 @@ footer a:hover {
   z-index: -10;
 }
 /* about page */
-#page-about .about-header {
-  background-image: url("image/banner4.jpg");
+
+#content-about .c-about {
+  display: flex;
+  align-items: center;
+}
+#content-about img {
+  height: 50%;
+  width: 45%;
+  padding: 50px 20px 100px 50px;
+  display: flex;
+}
+#content-about .desc {
+  padding-left: 20px;
+  text-align: justify;
+  padding-right: 50px;
+}
+/* contact page */
+#contact-banner .Banner {
+  background-image: url("Bannertop/btop5.jpg");
   width: 100%;
   height: 30vh;
   display: flex;
@@ -622,28 +640,12 @@ footer a:hover {
   background-size: cover;
   padding: 120px;
 }
-#page-about .about-header h3 {
-  color: white;
+#contact-banner .Banner h2 {
+  color: rgb(0, 0, 0);
 }
-#page-about .about-header h2 {
-  color: #efd22f;
+#contact-banner .Banner h3 {
+  color: rgb(255, 102, 0);
 }
-#content-about .c-about {
-  display: flex;
-  align-items: center;
-}
-#content-about img {
-  height: 50%;
-  width: 45%;
-  padding: 100px 0px 100px 25px;
-  display: flex;
-}
-#content-about .desc {
-  padding-left: 20px;
-  text-align: justify;
-  padding-right: 20px;
-}
-/* contact page */
 #contact-detail {
   display: flex;
   align-items: center;
@@ -720,6 +722,22 @@ footer a:hover {
   color: white;
 }
 /* cart page */
+#cart-banner .Banner {
+  background-image: url("Bannertop/btop1.jpg");
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-size: cover;
+  padding: 120px;
+}
+#cart-banner .Banner h2 {
+  color: #ff6f00;
+}
+#cart-banner .Banner h3 {
+  color: #ffd500;
+}
 #cart {
   margin: 75px 30px 75px 30px;
   overflow-x: auto;
@@ -932,6 +950,16 @@ footer a:hover {
     width: 50%;
     margin-left: 50px;
   }
+  #content-about img {
+    height: auto;
+    width: 50%;
+    padding: 5px 0px 100px 25px;
+    display: flex;
+  }
+  #content-about .desc {
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+  }
   #contact-detail .details {
     margin-right: 20px;
   }
@@ -982,7 +1010,12 @@ footer a:hover {
     background-position: 55%;
   }
   #product-1 .pro {
+    width: 50%;
+    height: auto;
+  }
+  #product-1 .pro img {
     width: 100%;
+    height: 200px;
   }
   #banner {
     height: 40vh;
